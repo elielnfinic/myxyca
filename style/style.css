@@ -1,0 +1,82 @@
+body{
+	background:blue;
+}
+
+#principal #contenuPrincipal{
+	
+}
+
+#inconnueEtNombre input[type='text']{
+	width:25px;
+	text-align:center;
+}
+.coefficients,.coefficientInd{
+	width:50px;
+}
+variable{
+	width:50px;
+	text-align:center;
+}
+.unePage #entetePrincipal #logoThumbnail{
+	width:2cm;
+	height:1cm;
+	box-shadow:4px -3px 4px gray;
+}
+#principal #imageLoading{
+	width:100%;
+	height:8px;
+	display:none;
+}
+sub{
+	font-size:12px;
+}
+#tableCalcules input{
+	text-align:center;
+}
+#aide{
+	position:relative;
+	left:3cm;
+	top:-1.3cm;
+	cursor:pointer;
+}
+
+#afficheurAide{
+	width:7cm;
+	height:3cm;
+	background:gray;
+	overflow:scroll;
+	position:absolute;
+	top:1.3cm;
+	left:3cm;
+	color:white;
+	display:none;
+}
+#quitter{
+	position:fixed;
+	left:8cm;
+	background:red;
+	border-radius:10px;
+	cursor:pointer;
+	font-style:bold;
+	display:none;
+}
+.unePage{
+	width:90%;
+	height:100px;
+	background:url("../img/back.jpg") repeat;
+	min-width:500px;
+	min-height:400px;
+}
+.unePage{
+	background:url("../img/back.jpg") repeat;
+	font-family:"Times New Roman";
+}
+.unePage button{
+	background:gray;
+	color:azure;
+	border:0px;
+	cursor:pointer;
+}
+.unePage h4,h5{
+	text-align:left;
+}

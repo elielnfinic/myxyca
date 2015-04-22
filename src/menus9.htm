@@ -1,0 +1,54 @@
+<!doctype html>
+	<html>
+		<body>
+			<div id="menus">
+				<table>
+					<tr>
+						<td><a class="titre">Aide</a>
+						<table id="contenuAide">
+							<tr><td>Bienvenu dans l'aide de cette application</td></tr>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td><a class="titre">Param&egrave;tres</a>
+							<table ="contenuParametre">
+								<tr><td>Mettre &agrave; jour</td></tr>
+								<tr><td>Langues</td></tr>
+							</table>
+						</td>
+					</tr>
+					<tr><td><a class="titre" href="mailto:elielmathe1@gmail.com">FeedBack</a></td></tr>
+					<tr><td><a class="titre">Partager</a></td></tr>
+					<tr><td><a class="titre">&Agrave; propos</a></td></tr>
+				</table>
+			</div>
+			<style type="text/css">
+				#menus{
+					position:relative;
+					bottom:2px;
+					background:gray;
+					color:black;
+					z-index:50;
+				}
+				#menus tr{
+					height:1cm;
+					border-bottom:1px solid white;
+				}
+				#menus tr td table{
+					width:100%;
+					margin-left:1cm;
+					background:black;
+					color:white;
+					display:none;
+				}
+			</style>
+			<script type="text/javascript">
+				$(function(){
+					$("#menus tr td a").click(function(){
+						$("table").css("display","compact");
+					});
+				});
+			</script>
+		</body>
+	</html>

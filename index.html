@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+	<html>
+		<head></head>
+		<body>
+			<style type="text/css">
+				@import url("libs/jquery.mobile-1.4.5.css");
+				@import url("libs/jquery.mobile-1.4.5.css");
+				@import url("style/style.css");
+				@import url("style/styleBienvenu.css");
+			</style>
+			<div data-role="page" id="principal" class="unePage">
+				<div data-role="header" id="entetePrincipal" data-position="fixed" style="text-align:center;">
+					<img style="display:none;" src="img/logo.png"  id="logoThumbnail"/>
+				</div>
+				
+				<div data-role="main" id="afficheurPrincipal">
+					<div>
+						<div id="texteMyxyca"><b>MyXyCa</b></div>
+						<h4>R&eacute;soud mes &eacute;quations</h4>
+						<h6>Version 1.0.0</h6>
+						<div id="idBarre"> </div>
+						<h5>By <i>Mathe Eliel</i></h5>
+					</div>
+				</div>
+				
+				<div data-role="footer"  data-position="fixed">
+					
+				</div>
+			</div>
+			
+			<div data-role="page" id="travail"  class="unePage">
+				<div data-role="header" id="entetePrincipal" data-position="fixed" style="text-align:center;">
+					<img src="img/logo.png"  id="logoThumbnail"/>
+				</div>
+				
+				<div data-role="main" id="contenuPrincipal">
+					<div id="afficheurAide">
+				</div>
+					<div id="champ_affichage">
+						<div id="donnnees">
+							<form id="inconnueEtNombre">
+								<div>
+									<input type="hidden" maxlength="1" id="nomInconnue" value="x"/>
+									<label for="nbreInc">Nbre d'inconnues:</label>
+									<input type="range" id="nombreInconnue" onchange="changementValeur();" value="3" min="2" max="20" data-highlight="true" />
+									<!--<button type="button" id="valider">Valider</button></td>-->
+								</div>
+								<table style="width:100%;display:none;">
+									<tr><td>Nom de l'inconnue</td><td><input type="text" maxlength="1" id="nomInconnue"/></td></tr>
+									<tr><td>Nombre d'inconnues</td><td><input type="number" max="20" min="2" id="nombreInconnue"/></td></tr>
+									<tr><td><button type="button" id="valider">Valider</button></td><td><button type="button" id="Initialiser" onclick="aZero()">Initialiser</button></td></tr>
+								</table>
+								<!--<button type="button" id="valider">Go</button>-->
+							</form>
+						</div>
+						<div id="zoneCalcules">
+							<form id="formulaireTableCalcules">
+								<img src="img/loadingAnimation.gif" id="imageLoading" style="display:none;"/>
+								<table id="tableCalcules" style="width:100%;">
+								</table>
+								<div id="boutonCalculer" style="width:4cm;"><button type="button" id="buttonCalculer" onclick="verifierChamps();">Calculer</button> </div>
+							</form>
+						</div>
+						<hr/>
+						<div id="reponses">
+				
+						</div>
+					</div>
+				
+					<div data-role="footer"  data-position="fixed">
+					H
+					</div>
+			</div>
+			
+			<div data-role="page" id="premier" class="unePage">
+				<div data-role="header" id="entetePrincipal" data-position="fixed" style="text-align:center;">
+					<img src="img/logo.png"  id="logoThumbnail"/>
+				</div>
+				<div data-role="main" id="contenuPrincipal">
+					Tres cool
+				</div>
+				<div data-role="footer"  data-position="fixed">
+					H
+				</div>
+			</div>
+			
+			<div data-role="page" id="contenuAide" class="unePage">
+				<div data-role="header" id="entetePrincipal" data-position="fixed" style="text-align:center;">
+					<img src="img/logo.png"  id="logoThumbnail"/>
+				</div>
+				
+				<div data-role="main" id="contenuPrincipal">
+					<div id="quitter" onclick="cacherAide();">Quitter</div>
+					<div id="utilisation"><b><u>1. Utilisation</u></b><br/>
+					Cette application vous permet de trouver
+					degr&eacute; &agrave; plusieurs inconnues.<br/>
+					Pour l'utiliser, entrez le nom de la variable, ensuite le nombre
+					d'inconnues et enfin cliquez sur Go pour afficher les syst&eacute;mes
+					d'&eacute;quations. Completez les coefficients et cliquez sur calculer pour
+					trouver les solutions.<br/>
+					<div id="realisateur"><b><u>2. Conception et r&eacute;alisation</u></b><br/>
+					Cette application a &eacute;t&eacute; realis&eacute;e par Mathe Eliel.
+					Il est gratuit et vous pouvez le distribuer. 
+					Si vous avez besoin de son code source,
+					&eacute;crivez-moi sur 
+					<ul>
+						<li>elielmathe@yahoo.fr</li>
+						<li>elielmathe1@gmail.com</li>
+						<li>eli.mathe.397@facebook.com</li>
+						<li>+243 998 995 5302</li>
+					</ul>
+					N'hesitez pas &agrave; me contacter si vous y decouvrez une faille pour que nous puissions
+ 					la corriger.<br/>
+					Plus d'infos, sur http://www.facebook.com/deonzgroup , le groupe d'informaticiens o&ugrave;
+ 					j'&eacute;volue
+					</div>
+					<div id="remerciement"><b><u>3. Remerciements</u></b><br/>
+					J'adresse mes remerciements
+					<ul>
+						<li>Aux entreprises Open Source comme Apache, Google,...</li>
+						<li>A l'assistant Maandiko de l'UCBC</li>
+						<li>Aux amis comme Katsuva Mbusa, Serge Mbunge, Kenda Tshiongo pour leur esprit de 
+							partage de l'information
+						</li>
+					</ul>
+				</div>
+				
+				<div data-role="footer"  data-position="fixed">
+					H
+				</div>
+			</div>
+			
+			<script type="text/javascript" src="libs/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="libs/jquery-ui.js"></script>
+			<script type="text/javascript" src="libs/jquery.mobile-1.4.5.js"></script>
+			<script type="text/javascript" src="script/animationBienvenu.js"></script>
+			<script type="text/javascript" src="script/determinant.js"></script>
+			<script type="text/javascript" src="script/script1.js"></script>
+			<script type="text/javascript" src="script/script2.js"></script>
+		</body>
+	</html>

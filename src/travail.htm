@@ -1,0 +1,52 @@
+﻿<!doctype html>
+	<html>
+		<head>
+			<title>xYcalc</title>
+		</head>
+		
+		<body>			
+			<div id="afficheurAide">
+			</div>
+			<div id="champ_affichage">
+				<div id="donnnees">
+					<form id="inconnueEtNombre">
+						<table>
+							<tr>
+								<td>Nom de l'inconnue</td><td><input type="text" maxlength="1" id="nomInconnue"/></td>
+							</tr>
+							<tr>
+								<td>Nombre d'inconnues</td><td><input type="text" maxlength="2" id="nombreInconnue"/></td>
+							</tr>
+							<tr>
+								<td><button type="button" id="valider">Valider</button>							
+								<button type="button" id="Initialiser" onclick="aZero()">Initialiser</button></td>
+							</tr>
+						</table>
+						<!--<button type="button" id="valider">Go</button>-->
+					</form>
+					<hr/>
+				</div>
+				<div id="zoneCalcules">
+					<form id="formulaireTableCalcules">
+						<img src="loadingAnimation.gif" id="imageLoading"/>
+						<table id="tableCalcules">
+						</table>
+						<div id="boutonCalculer"></div>
+					</form>
+				</div>
+				<hr/>
+				<div id="reponses">
+				
+				</div>
+			</div><script type="text/javascript">
+			</script>
+			<style type="text/css">@import url("style/style.css");</style>
+			<script type="text/javascript" src="script/jquery.js"></script>
+			<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
+			<script type="text/javascript" src="script/determinant.js"></script>
+			<script type="text/javascript" src="script/script1.js"></script>
+			<script type="text/javascript" src="script/script2.js"></script>
+			
+			
+		</body>
+	</html>
